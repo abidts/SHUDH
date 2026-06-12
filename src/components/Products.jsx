@@ -13,8 +13,15 @@ export default function Products() {
         <div className="row g-4">
           {products.map((p) => (
             <div className="col-sm-6 col-lg-4" key={p.name}>
-              <div className="product-card p-4 d-flex flex-column text-center">
-                <div className="product-emoji mb-2">{p.emoji}</div>
+              <div className="product-card d-flex flex-column text-center overflow-hidden">
+                {p.image ? (
+                  <img src={p.image} alt={p.name} className="product-img" loading="lazy" />
+                ) : (
+                  <div className="product-emoji-wrap">
+                    <span className="product-emoji">{p.emoji}</span>
+                  </div>
+                )}
+                <div className="p-4 d-flex flex-column flex-grow-1">
                 <h3 className="h5 fw-bold">{p.name}</h3>
                 <p className="text-muted flex-grow-1">{p.blurb}</p>
                 <div className="price-tag mb-3">Contact for price</div>
@@ -28,6 +35,7 @@ export default function Products() {
                 >
                   Enquire Now
                 </a>
+                </div>
               </div>
             </div>
           ))}

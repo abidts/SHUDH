@@ -49,40 +49,48 @@ export const aboutPoints = [
   'Reliable support for repeat household and business orders',
 ]
 
+// To add a real photo, paste the Cloudinary URL into `image`.
+// While `image` is empty (''), the card shows the `emoji` fallback.
 export const products = [
   {
     name: 'Kashmiri Saffron',
     emoji: '🌸',
+    image: '',
     blurb:
       'Crimson threads of pure Mongra that make a few strands feel like an open flex.',
   },
   {
     name: 'Premium Almonds',
     emoji: '🥜',
+    image: '',
     blurb:
       'The overachiever of snack jars: quiet, classy, and always pretending to be healthy.',
   },
   {
     name: 'Kashmiri Walnuts',
     emoji: '🌰',
+    image: '',
     blurb:
       'Brain-shaped little geniuses that crack open into pure cold-weather comfort.',
   },
   {
     name: 'Green Cardamom',
     emoji: '🫛',
+    image: '',
     blurb:
       'Small pods, huge attitude, and the secret reason chai gets all the compliments.',
   },
   {
     name: 'Dry Fruits Mix',
     emoji: '🍇',
+    image: '',
     blurb:
       'A handful of everything good, for people who can never pick just one favorite.',
   },
   {
     name: 'Blended Masalas',
     emoji: '🌶️',
+    image: '',
     blurb:
       'Tiny flavor fireworks for people who believe bland food is a personal insult.',
   },

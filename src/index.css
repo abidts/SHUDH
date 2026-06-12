@@ -125,8 +125,21 @@ section {
   transform: translateY(-6px);
   box-shadow: 0 14px 30px rgba(122, 46, 5, 0.14);
 }
+.product-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background: #f5ead3;
+}
+.product-emoji-wrap {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fdf1d8, #f6e2bd);
+}
 .product-emoji {
-  font-size: 2.6rem;
+  font-size: 3.4rem;
   line-height: 1;
 }
 .price-tag {
