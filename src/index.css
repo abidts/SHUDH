@@ -421,43 +421,6 @@ section {
   color: var(--spice-deep);
 }
 
-/* ---------- Buy Online retailers ---------- */
-.buy-online {
-  background: #fff;
-}
-.store-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: #fff;
-  border: 1.5px solid #e9dcca;
-  border-radius: 12px;
-  padding: 0.7rem 1.2rem;
-  text-decoration: none;
-  color: var(--spice-text);
-  font-weight: 600;
-  transition: all 0.16s ease;
-}
-.store-btn:hover {
-  border-color: var(--spice-amber);
-  color: var(--spice-amber);
-  transform: translateY(-3px);
-  box-shadow: 0 10px 22px rgba(225, 38, 43, 0.14);
-}
-.store-emoji {
-  font-size: 1.4rem;
-}
-.store-btn-wa {
-  border-color: var(--spice-green);
-  color: var(--spice-green);
-}
-.store-btn-wa:hover {
-  border-color: var(--spice-green);
-  color: #fff;
-  background: var(--spice-green);
-  box-shadow: 0 10px 22px rgba(30, 126, 52, 0.2);
-}
-
 /* ---------- Newsletter band ---------- */
 .newsletter-band {
   background: #fff3dc;

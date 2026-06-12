@@ -6,7 +6,6 @@ const pages = [
   { to: '/products', label: 'Products' },
   { to: '/about', label: 'About' },
   { to: '/recipes', label: 'Recipes' },
-  { to: '/buy', label: 'Buy Online' },
   { to: '/contact', label: 'Contact' },
 ]
 

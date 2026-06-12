@@ -38,11 +38,6 @@ export default function Navbar() {
               <Link className="nav-link" to="/contact">Contact</Link>
             </li>
             <li className="nav-item ms-lg-2 mt-2 mt-lg-0">
-              <Link className="btn btn-spice btn-sm" to="/buy">
-                Buy Online
-              </Link>
-            </li>
-            <li className="nav-item ms-lg-2 mt-2 mt-lg-0">
               <a
                 className="btn btn-wa btn-sm"
                 href={whatsappLink(`Hello ${site.name}, I'd like to know more about your products.`)}

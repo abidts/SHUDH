@@ -73,15 +73,6 @@ export const recipes = [
   { name: 'Kesar Kheer', emoji: '🍮', note: 'Slow-cooked milk pudding perfumed with our Mongra saffron.' },
 ]
 
-// "Buy Online" retailers (Everest-style). Replace '#' with real store URLs.
-export const retailers = [
-  { name: 'Amazon', emoji: '🛒', url: '#' },
-  { name: 'Flipkart', emoji: '🛍️', url: '#' },
-  { name: 'BigBasket', emoji: '🧺', url: '#' },
-  { name: 'JioMart', emoji: '🏪', url: '#' },
-  { name: 'Blinkit', emoji: '⚡', url: '#' },
-]
-
 // Order in which product categories are listed on the page.
 export const categoryOrder = [
   'Blended Spices',
