@@ -26,22 +26,46 @@ section {
   scroll-margin-top: 72px;
 }
 
-/* ---------- Navbar (Everest-style: white, red accents) ---------- */
+/* ---------- Navbar (transparent overlay, floating links) ---------- */
 .navbar-shudh {
-  background: #ffffff;
-  border-bottom: 3px solid var(--spice-amber);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  background: transparent;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .navbar-shudh .navbar-brand {
-  color: var(--spice-amber) !important;
+  color: #fff !important;
   font-weight: 800;
   letter-spacing: 0.02em;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
 }
 .navbar-shudh .nav-link {
-  color: #3a3a3a !important;
+  color: #fff8f0 !important;
   font-weight: 600;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
 }
 .navbar-shudh .nav-link:hover {
-  color: var(--spice-amber) !important;
+  color: var(--spice-saffron) !important;
+}
+/* Light hamburger icon for the dark hero backdrop */
+.navbar-shudh .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+.navbar-shudh .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+/* On mobile, give the expanded menu a readable translucent backdrop */
+@media (max-width: 991.98px) {
+  .navbar-shudh .navbar-collapse {
+    background: rgba(122, 18, 21, 0.96);
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    margin-top: 0.5rem;
+  }
 }
 .brand-logo {
   display: inline-flex;
@@ -112,7 +136,8 @@ section {
     radial-gradient(circle at 80% 30%, var(--spice-saffron) 0, transparent 45%),
     var(--spice-amber);
   color: #fff7ea;
-  padding: 4rem 0 3.5rem;
+  /* extra top padding leaves room for the transparent overlay navbar */
+  padding: 6.5rem 0 3.5rem;
 }
 .page-banner .lead {
   color: #ffe9c7;

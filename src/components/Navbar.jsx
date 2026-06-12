@@ -3,7 +3,7 @@ import { site, whatsappLink } from '../data/products.js'
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-shudh sticky-top shadow-sm">
+    <nav className="navbar navbar-expand-lg navbar-shudh">
       <div className="container">
         <Link className="navbar-brand d-flex align-items-center" to="/">
           <span className="brand-logo">S</span>
