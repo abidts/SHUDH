@@ -1,10 +1,11 @@
 :root {
-  --spice-saffron: #e8a317;
-  --spice-amber: #b8530a;
-  --spice-deep: #7a2e05;
-  --spice-cream: #fdf8ef;
-  --spice-green: #1e7e34;
-  --spice-text: #2b1d12;
+  /* Everest-inspired palette: red + gold + white */
+  --spice-saffron: #f5b301; /* gold accent */
+  --spice-amber: #e1262b; /* Everest red (primary) */
+  --spice-deep: #9e1b1f; /* deep maroon */
+  --spice-cream: #fff8f3; /* near-white background */
+  --spice-green: #1e7e34; /* WhatsApp green */
+  --spice-text: #2b2b2b;
 }
 
 * {
@@ -25,17 +26,22 @@ section {
   scroll-margin-top: 72px;
 }
 
-/* ---------- Navbar ---------- */
+/* ---------- Navbar (Everest-style: white, red accents) ---------- */
 .navbar-shudh {
-  background: var(--spice-deep);
+  background: #ffffff;
+  border-bottom: 3px solid var(--spice-amber);
 }
-.navbar-shudh .navbar-brand,
+.navbar-shudh .navbar-brand {
+  color: var(--spice-amber) !important;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
 .navbar-shudh .nav-link {
-  color: #fff6e6 !important;
+  color: #3a3a3a !important;
   font-weight: 600;
 }
 .navbar-shudh .nav-link:hover {
-  color: var(--spice-saffron) !important;
+  color: var(--spice-amber) !important;
 }
 .brand-logo {
   display: inline-flex;
@@ -44,8 +50,8 @@ section {
   width: 34px;
   height: 34px;
   border-radius: 9px;
-  background: var(--spice-saffron);
-  color: var(--spice-deep);
+  background: var(--spice-amber);
+  color: #fff;
   font-weight: 800;
   font-family: Georgia, serif;
   margin-right: 0.55rem;
@@ -335,6 +341,43 @@ section {
 }
 .recipe-link:hover {
   color: var(--spice-deep);
+}
+
+/* ---------- Buy Online retailers ---------- */
+.buy-online {
+  background: #fff;
+}
+.store-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #fff;
+  border: 1.5px solid #e9dcca;
+  border-radius: 12px;
+  padding: 0.7rem 1.2rem;
+  text-decoration: none;
+  color: var(--spice-text);
+  font-weight: 600;
+  transition: all 0.16s ease;
+}
+.store-btn:hover {
+  border-color: var(--spice-amber);
+  color: var(--spice-amber);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(225, 38, 43, 0.14);
+}
+.store-emoji {
+  font-size: 1.4rem;
+}
+.store-btn-wa {
+  border-color: var(--spice-green);
+  color: var(--spice-green);
+}
+.store-btn-wa:hover {
+  border-color: var(--spice-green);
+  color: #fff;
+  background: var(--spice-green);
+  box-shadow: 0 10px 22px rgba(30, 126, 52, 0.2);
 }
 
 /* ---------- Newsletter band ---------- */
