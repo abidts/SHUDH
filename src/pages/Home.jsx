@@ -12,8 +12,8 @@ export default function Home() {
     <main>
       <Hero />
       <Features />
-      <CategoryTicker />
       <CategoryShowcase />
+      <CategoryTicker />
       <Stats />
       <Newsletter />
     </main>
