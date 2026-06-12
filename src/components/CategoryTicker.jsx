@@ -46,7 +46,7 @@ export default function CategoryTicker() {
   return (
     <section className="ticker-section py-5">
       <div className="container text-center mb-4">
-        <h2 className="section-title fw-bold">Shop by Category</h2>
+        <h2 className="section-title fw-bold">Shudh Specialities</h2>
       </div>
       <div className="ticker" aria-label="Product categories">
         {/* Track is duplicated so the scroll loops seamlessly. */}
