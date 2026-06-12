@@ -73,6 +73,28 @@ export const recipes = [
   { name: 'Kesar Kheer', emoji: '🍮', note: 'Slow-cooked milk pudding perfumed with our Mongra saffron.' },
 ]
 
+// Order in which product categories are listed on the page.
+export const categoryOrder = [
+  'Blended Spices',
+  'Pure Spices',
+  'Exotic Range',
+  'Dry Fruits',
+]
+
+// Group products by their `category`, following categoryOrder. Any category
+// not in categoryOrder is appended at the end in first-seen order.
+export function productsByCategory() {
+  const groups = {}
+  for (const p of products) {
+    ;(groups[p.category] ||= []).push(p)
+  }
+  const ordered = categoryOrder.filter((c) => groups[c])
+  for (const c of Object.keys(groups)) {
+    if (!ordered.includes(c)) ordered.push(c)
+  }
+  return ordered.map((category) => ({ category, items: groups[category] }))
+}
+
 // To add a real photo, paste the Cloudinary URL into `image`.
 // While `image` is empty (''), the card shows the `emoji` fallback.
 export const products = [

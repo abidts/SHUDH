@@ -160,6 +160,48 @@ section {
   margin-bottom: 0.6rem;
 }
 
+/* ---------- Category filter chips ---------- */
+.cat-chip {
+  background: #fff;
+  border: 1px solid #e3d2b3;
+  color: var(--spice-deep);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  transition: all 0.15s ease;
+}
+.cat-chip:hover {
+  border-color: var(--spice-amber);
+  color: var(--spice-amber);
+}
+.cat-chip.active {
+  background: var(--spice-amber);
+  border-color: var(--spice-amber);
+  color: #fff;
+}
+
+/* ---------- Category block heading ---------- */
+.category-heading {
+  font-family: Georgia, serif;
+  color: var(--spice-deep);
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #f0e3cd;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.category-heading::before {
+  content: '';
+  width: 10px;
+  height: 22px;
+  background: var(--spice-saffron);
+  border-radius: 3px;
+}
+
 /* ---------- Stats band ---------- */
 .stats-band {
   background:
