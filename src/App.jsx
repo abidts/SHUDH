@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
 import Features from './components/Features.jsx'
+import CategoryTicker from './components/CategoryTicker.jsx'
 import Products from './components/Products.jsx'
 import Stats from './components/Stats.jsx'
 import Recipes from './components/Recipes.jsx'
@@ -16,6 +17,7 @@ export default function App() {
       <main>
         <Hero />
         <Features />
+        <CategoryTicker />
         <Products />
         <Stats />
         <About />

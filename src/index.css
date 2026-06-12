@@ -160,6 +160,96 @@ section {
   margin-bottom: 0.6rem;
 }
 
+/* ---------- Category ticker (marquee) ---------- */
+.ticker-section {
+  background: #fff;
+  border-top: 1px solid #f0e3cd;
+  border-bottom: 1px solid #f0e3cd;
+}
+.ticker {
+  overflow: hidden;
+  position: relative;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.ticker-track {
+  display: flex;
+  width: max-content;
+  gap: 1.25rem;
+  padding: 0.5rem 0.625rem;
+  animation: ticker-scroll 28s linear infinite;
+}
+.ticker:hover .ticker-track {
+  animation-play-state: paused;
+}
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    /* Track holds two copies; shifting by half loops seamlessly. */
+    transform: translateX(calc(-50% - 0.625rem));
+  }
+}
+.ticker-tile {
+  flex: 0 0 auto;
+  width: 200px;
+  text-decoration: none;
+  color: var(--spice-text);
+  border: 1px solid #f0e3cd;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.ticker-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 26px rgba(122, 46, 5, 0.16);
+  color: var(--spice-text);
+}
+.ticker-thumb {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fdf1d8, #f4dcae);
+}
+.ticker-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ticker-emoji {
+  font-size: 3.4rem;
+  line-height: 1;
+}
+.ticker-meta {
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.ticker-name {
+  font-weight: 700;
+  color: var(--spice-deep);
+}
+.ticker-count {
+  font-size: 0.8rem;
+  color: #9a7b53;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 /* ---------- Category filter chips ---------- */
 .cat-chip {
   background: #fff;
