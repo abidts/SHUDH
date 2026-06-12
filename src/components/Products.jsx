@@ -22,6 +22,7 @@ export default function Products() {
                   </div>
                 )}
                 <div className="p-4 d-flex flex-column flex-grow-1">
+                {p.category && <span className="product-cat">{p.category}</span>}
                 <h3 className="h5 fw-bold">{p.name}</h3>
                 <p className="text-muted flex-grow-1">{p.blurb}</p>
                 <div className="price-tag mb-3">Contact for price</div>

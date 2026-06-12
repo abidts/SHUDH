@@ -43,10 +43,34 @@ export const features = [
   },
 ]
 
+// Emotive, Everest-inspired brand storytelling — localized to Kashmir.
+export const aboutStory = [
+  "At Shudh Spices, a spice isn't just an ingredient — it's a memory. It carries the warmth of a Kashmiri kitchen in winter, the aroma of kahwa shared with family, and the colour saffron lends to a festive plate.",
+  'Rooted in Srinagar, we bring authentic flavours from the valley to your home — sourced with care, packed clean, and quality-checked, one batch at a time.',
+]
+
 export const aboutPoints = [
   'Freshness you can smell the moment the pack opens',
-  'Flavor-first sourcing inspired by trusted regional staples',
+  'Flavor-first sourcing inspired by trusted Kashmiri staples',
   'Reliable support for repeat household and business orders',
+]
+
+// "Rooted in Kashmir" values band — honest highlights, not sales figures.
+export const stats = [
+  { value: '100%', label: 'Pure & natural — nothing added' },
+  { value: 'Kashmir', label: 'Sourced at the origin' },
+  { value: '6+', label: 'Signature spices & dry fruits' },
+  { value: 'Retail + Bulk', label: 'Orders of every size welcome' },
+]
+
+// Kashmiri recipes — informational cards, link to a WhatsApp enquiry.
+export const recipes = [
+  { name: 'Rogan Josh', emoji: '🍖', note: 'The crimson Kashmiri classic — lamb slow-cooked in our pure spices.' },
+  { name: 'Mutton Yakhni', emoji: '🥘', note: 'Fragrant yoghurt curry carried by green cardamom and fennel.' },
+  { name: 'Kashmiri Kahwa', emoji: '🍵', note: 'Saffron, cardamom and almond — the valley in a cup.' },
+  { name: 'Dum Aloo', emoji: '🥔', note: 'Baby potatoes simmered in a rich, spiced Kashmiri gravy.' },
+  { name: 'Modur Pulav', emoji: '🍚', note: 'Sweet saffron rice studded with dry fruits for festive days.' },
+  { name: 'Kesar Kheer', emoji: '🍮', note: 'Slow-cooked milk pudding perfumed with our Mongra saffron.' },
 ]
 
 // To add a real photo, paste the Cloudinary URL into `image`.
@@ -54,6 +78,7 @@ export const aboutPoints = [
 export const products = [
   {
     name: 'Kashmiri Saffron',
+    category: 'Exotic Range',
     emoji: '🌸',
     image: '',
     blurb:
@@ -61,6 +86,7 @@ export const products = [
   },
   {
     name: 'Premium Almonds',
+    category: 'Dry Fruits',
     emoji: '🥜',
     image: '',
     blurb:
@@ -68,6 +94,7 @@ export const products = [
   },
   {
     name: 'Kashmiri Walnuts',
+    category: 'Dry Fruits',
     emoji: '🌰',
     image: '',
     blurb:
@@ -75,6 +102,7 @@ export const products = [
   },
   {
     name: 'Green Cardamom',
+    category: 'Pure Spices',
     emoji: '🫛',
     image: '',
     blurb:
@@ -82,6 +110,7 @@ export const products = [
   },
   {
     name: 'Dry Fruits Mix',
+    category: 'Dry Fruits',
     emoji: '🍇',
     image: '',
     blurb:
@@ -89,6 +118,7 @@ export const products = [
   },
   {
     name: 'Blended Masalas',
+    category: 'Blended Spices',
     emoji: '🌶️',
     image: '',
     blurb:

@@ -1,4 +1,4 @@
-import { aboutPoints, site } from '../data/products.js'
+import { aboutPoints, aboutStory, site } from '../data/products.js'
 
 export default function About() {
   return (
@@ -10,11 +10,11 @@ export default function About() {
             <p className="lead mt-4">
               Serving local buyers and wider orders with a quality-first approach.
             </p>
-            <p className="text-muted">
-              From the heart of {site.city}, {site.name} brings carefully
-              sourced spices and dry fruits to home kitchens and businesses
-              alike — clean-packed, quality-checked, and ready to enquire.
-            </p>
+            {aboutStory.map((para) => (
+              <p className="text-muted" key={para.slice(0, 24)}>
+                {para}
+              </p>
+            ))}
             <div className="mt-4">
               {aboutPoints.map((point) => (
                 <div className="about-point" key={point}>
