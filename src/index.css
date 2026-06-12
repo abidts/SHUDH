@@ -1,0 +1,195 @@
+:root {
+  --spice-saffron: #e8a317;
+  --spice-amber: #b8530a;
+  --spice-deep: #7a2e05;
+  --spice-cream: #fdf8ef;
+  --spice-green: #1e7e34;
+  --spice-text: #2b1d12;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--spice-cream);
+  color: var(--spice-text);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+h1, h2, h3, .brand-font {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+section {
+  scroll-margin-top: 72px;
+}
+
+/* ---------- Navbar ---------- */
+.navbar-shudh {
+  background: var(--spice-deep);
+}
+.navbar-shudh .navbar-brand,
+.navbar-shudh .nav-link {
+  color: #fff6e6 !important;
+  font-weight: 600;
+}
+.navbar-shudh .nav-link:hover {
+  color: var(--spice-saffron) !important;
+}
+.brand-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background: var(--spice-saffron);
+  color: var(--spice-deep);
+  font-weight: 800;
+  font-family: Georgia, serif;
+  margin-right: 0.55rem;
+}
+
+/* ---------- Buttons ---------- */
+.btn-spice {
+  background: var(--spice-amber);
+  border-color: var(--spice-amber);
+  color: #fff;
+  font-weight: 600;
+}
+.btn-spice:hover {
+  background: var(--spice-deep);
+  border-color: var(--spice-deep);
+  color: #fff;
+}
+.btn-wa {
+  background: var(--spice-green);
+  border-color: var(--spice-green);
+  color: #fff;
+  font-weight: 600;
+}
+.btn-wa:hover {
+  background: #155d27;
+  border-color: #155d27;
+  color: #fff;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  background:
+    linear-gradient(rgba(122, 46, 5, 0.82), rgba(122, 46, 5, 0.78)),
+    radial-gradient(circle at 20% 20%, #e8a317 0, transparent 40%),
+    radial-gradient(circle at 80% 70%, #b8530a 0, transparent 45%),
+    var(--spice-deep);
+  color: #fff7ea;
+  padding: 6rem 0 5rem;
+}
+.hero .lead {
+  color: #ffe9c7;
+}
+.hero-pill {
+  display: inline-block;
+  background: rgba(255, 213, 107, 0.18);
+  border: 1px solid var(--spice-saffron);
+  color: var(--spice-saffron);
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+/* ---------- Cards ---------- */
+.section-title {
+  color: var(--spice-deep);
+}
+.section-title::after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 4px;
+  background: var(--spice-saffron);
+  border-radius: 4px;
+  margin: 0.75rem auto 0;
+}
+.feature-card,
+.product-card {
+  background: #fff;
+  border: 1px solid #f0e3cd;
+  border-radius: 16px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  height: 100%;
+}
+.feature-card:hover,
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(122, 46, 5, 0.14);
+}
+.product-emoji {
+  font-size: 2.6rem;
+  line-height: 1;
+}
+.price-tag {
+  color: var(--spice-amber);
+  font-weight: 700;
+}
+
+/* ---------- About ---------- */
+.about {
+  background: #fff;
+}
+.about-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 0.85rem;
+}
+.about-point .tick {
+  color: var(--spice-green);
+  font-weight: 800;
+}
+
+/* ---------- Contact ---------- */
+.contact-info-card {
+  background: var(--spice-deep);
+  color: #fff7ea;
+  border-radius: 16px;
+}
+.contact-info-card a {
+  color: var(--spice-saffron);
+  text-decoration: none;
+}
+
+/* ---------- Footer ---------- */
+.footer-shudh {
+  background: #2b1d12;
+  color: #f0e3cd;
+}
+.footer-shudh a {
+  color: var(--spice-saffron);
+  text-decoration: none;
+  margin: 0 0.4rem;
+}
+
+/* ---------- Floating WhatsApp ---------- */
+.wa-float {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 1050;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--spice-green);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+.wa-float:hover {
+  color: #fff;
+  background: #155d27;
+}
