@@ -1,13 +1,14 @@
+import { Link } from 'react-router-dom'
 import { site, whatsappLink } from '../data/products.js'
 
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-shudh sticky-top shadow-sm">
       <div className="container">
-        <a className="navbar-brand d-flex align-items-center" href="#home">
+        <Link className="navbar-brand d-flex align-items-center" to="/">
           <span className="brand-logo">S</span>
           {site.name}
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -22,24 +23,24 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="mainNav">
           <ul className="navbar-nav ms-auto align-items-lg-center gap-lg-1">
             <li className="nav-item">
-              <a className="nav-link" href="#home">Home</a>
+              <Link className="nav-link" to="/">Home</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#products">Products</a>
+              <Link className="nav-link" to="/products">Products</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#about">About</a>
+              <Link className="nav-link" to="/#about">About</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#recipes">Recipes</a>
+              <Link className="nav-link" to="/#recipes">Recipes</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contact">Contact</a>
+              <Link className="nav-link" to="/#contact">Contact</Link>
             </li>
             <li className="nav-item ms-lg-2 mt-2 mt-lg-0">
-              <a className="btn btn-spice btn-sm" href="#buy">
+              <Link className="btn btn-spice btn-sm" to="/#buy">
                 Buy Online
-              </a>
+              </Link>
             </li>
             <li className="nav-item ms-lg-2 mt-2 mt-lg-0">
               <a

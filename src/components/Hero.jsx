@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { site, whatsappLink } from '../data/products.js'
 
 export default function Hero() {
@@ -10,9 +11,9 @@ export default function Hero() {
           {site.tagline}
         </p>
         <div className="d-flex flex-wrap gap-3 justify-content-center mt-4">
-          <a href="#products" className="btn btn-spice btn-lg">
+          <Link to="/products" className="btn btn-spice btn-lg">
             Explore Products
-          </a>
+          </Link>
           <a
             className="btn btn-wa btn-lg"
             href={whatsappLink(`Hello ${site.name}, I'd like to place an enquiry.`)}

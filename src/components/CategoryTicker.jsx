@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { productsByCategory } from '../data/products.js'
 
 // Build one visual tile per category: a representative image (first product
@@ -16,9 +17,9 @@ function categoryTiles() {
 
 function Tile({ t, ariaHidden }) {
   return (
-    <a
+    <Link
       className="ticker-tile"
-      href="#products"
+      to="/products"
       aria-hidden={ariaHidden || undefined}
       tabIndex={ariaHidden ? -1 : 0}
     >
@@ -35,7 +36,7 @@ function Tile({ t, ariaHidden }) {
           {t.count} {t.count === 1 ? 'product' : 'products'}
         </span>
       </div>
-    </a>
+    </Link>
   )
 }
 

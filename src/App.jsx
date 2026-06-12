@@ -1,32 +1,19 @@
+import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar.jsx'
-import Hero from './components/Hero.jsx'
-import Features from './components/Features.jsx'
-import CategoryTicker from './components/CategoryTicker.jsx'
-import Products from './components/Products.jsx'
-import Stats from './components/Stats.jsx'
-import BuyOnline from './components/BuyOnline.jsx'
-import Recipes from './components/Recipes.jsx'
-import About from './components/About.jsx'
-import Newsletter from './components/Newsletter.jsx'
-import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
+import ScrollToTop from './components/ScrollToTop.jsx'
+import Home from './pages/Home.jsx'
+import ProductsPage from './pages/ProductsPage.jsx'
 
 export default function App() {
   return (
     <>
+      <ScrollToTop />
       <Navbar />
-      <main>
-        <Hero />
-        <Features />
-        <CategoryTicker />
-        <Products />
-        <Stats />
-        <BuyOnline />
-        <About />
-        <Recipes />
-        <Newsletter />
-        <Contact />
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<ProductsPage />} />
+      </Routes>
       <Footer />
     </>
   )
