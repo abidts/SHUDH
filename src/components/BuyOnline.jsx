@@ -4,10 +4,6 @@ export default function BuyOnline() {
   return (
     <section id="buy" className="buy-online py-5">
       <div className="container text-center">
-        <h2 className="section-title fw-bold">Buy Online</h2>
-        <p className="text-muted mt-3 mb-4">
-          Get your favourite Shudh Spices delivered to your doorstep.
-        </p>
         <div className="d-flex flex-wrap justify-content-center gap-3">
           {retailers.map((r) => (
             <a

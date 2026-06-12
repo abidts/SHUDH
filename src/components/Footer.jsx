@@ -1,4 +1,14 @@
+import { Link } from 'react-router-dom'
 import { site, whatsappLink } from '../data/products.js'
+
+const pages = [
+  { to: '/', label: 'Home' },
+  { to: '/products', label: 'Products' },
+  { to: '/about', label: 'About' },
+  { to: '/recipes', label: 'Recipes' },
+  { to: '/buy', label: 'Buy Online' },
+  { to: '/contact', label: 'Contact' },
+]
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -8,6 +18,11 @@ export default function Footer() {
         <div className="container">
           <h3 className="h5 brand-font fw-bold mb-2">{site.name}</h3>
           <p className="mb-2 opacity-75">{site.city}</p>
+          <div className="mb-3 d-flex flex-wrap justify-content-center">
+            {pages.map((p) => (
+              <Link key={p.to} to={p.to}>{p.label}</Link>
+            ))}
+          </div>
           <div className="mb-3">
             <a href={site.social.instagram} target="_blank" rel="noopener noreferrer">Instagram</a>
             <a href={site.social.facebook} target="_blank" rel="noopener noreferrer">Facebook</a>

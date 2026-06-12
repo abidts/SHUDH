@@ -4,12 +4,6 @@ export default function Recipes() {
   return (
     <section id="recipes" className="py-5">
       <div className="container">
-        <div className="text-center mb-5">
-          <h2 className="section-title fw-bold">Recipes For Your Soul</h2>
-          <p className="text-muted mt-3">
-            The dishes our spices were made for — straight from Kashmiri kitchens.
-          </p>
-        </div>
         <div className="row g-4">
           {recipes.map((r) => (
             <div className="col-sm-6 col-lg-4" key={r.name}>

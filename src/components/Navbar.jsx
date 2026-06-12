@@ -29,16 +29,16 @@ export default function Navbar() {
               <Link className="nav-link" to="/products">Products</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/#about">About</Link>
+              <Link className="nav-link" to="/about">About</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/#recipes">Recipes</Link>
+              <Link className="nav-link" to="/recipes">Recipes</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/#contact">Contact</Link>
+              <Link className="nav-link" to="/contact">Contact</Link>
             </li>
             <li className="nav-item ms-lg-2 mt-2 mt-lg-0">
-              <Link className="btn btn-spice btn-sm" to="/#buy">
+              <Link className="btn btn-spice btn-sm" to="/buy">
                 Buy Online
               </Link>
             </li>
