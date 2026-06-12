@@ -1,6 +1,7 @@
 import Hero from '../components/Hero.jsx'
 import Features from '../components/Features.jsx'
 import CategoryTicker from '../components/CategoryTicker.jsx'
+import CategoryShowcase from '../components/CategoryShowcase.jsx'
 import Stats from '../components/Stats.jsx'
 import Newsletter from '../components/Newsletter.jsx'
 
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <Features />
       <CategoryTicker />
+      <CategoryShowcase />
       <Stats />
       <Newsletter />
     </main>

@@ -90,6 +90,35 @@ export const categoryOrder = [
   'Dry Fruits',
 ]
 
+// Everest-style intro for each category, shown in the "Shop by Category"
+// showcase. Paste a Cloudinary URL into `image` to replace the emoji.
+export const categoryInfo = {
+  'Blended Spices': {
+    emoji: '🌶️',
+    image: '',
+    blurb:
+      "Nothing beats the taste of traditional Indian spice blends! Shudh's range of blended masalas is hand-crafted, with ingredients sourced from trusted Kashmiri and Indian spice lands — so the taste, aroma, flavour and colour stay uncompromised in every pack.",
+  },
+  'Pure Spices': {
+    emoji: '🫛',
+    image: '',
+    blurb:
+      'Pure spices hold a special place of honour in every Indian kitchen, no matter the region or recipe. At Shudh, we believe in spices that are rich, clean and authentic — and nothing says it better than our range of single-origin pure spices.',
+  },
+  'Exotic Range': {
+    emoji: '🌸',
+    image: '',
+    blurb:
+      "Pure, premium and exotic — Shudh's Kashmiri Saffron is a must-have for traditional, mouth-watering shahi feasts. Hand-picked Mongra threads carry a subtle, earthy flavour and an unmistakable aroma that make every dish a little more special.",
+  },
+  'Dry Fruits': {
+    emoji: '🌰',
+    image: '',
+    blurb:
+      "From plump almonds to crisp Kashmiri walnuts, our dry fruits are freshness you can smell the moment the pack opens. Sourced at the origin and clean-packed, they're perfect for daily snacking, festive sweets and thoughtful gifting.",
+  },
+}
+
 // Group products by their `category`, following categoryOrder. Any category
 // not in categoryOrder is appended at the end in first-seen order.
 export function productsByCategory() {
