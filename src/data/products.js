@@ -127,25 +127,25 @@ export const categoryOrder = [
 export const categoryInfo = {
   'Blended Spices': {
     emoji: '🌶️',
-    image: '',
+    image: stock('1596040033229-a9821ebd058d', 760),
     blurb:
       "Nothing beats the taste of traditional Indian spice blends! Shudh's range of blended masalas is hand-crafted, with ingredients sourced from trusted Kashmiri and Indian spice lands — so the taste, aroma, flavour and colour stay uncompromised in every pack.",
   },
   'Pure Spices': {
     emoji: '🫛',
-    image: '',
+    image: stock('1532336414038-cf19250c5757', 760),
     blurb:
       'Pure spices hold a special place of honour in every Indian kitchen, no matter the region or recipe. At Shudh, we believe in spices that are rich, clean and authentic — and nothing says it better than our range of single-origin pure spices.',
   },
   'Exotic Range': {
     emoji: '🌸',
-    image: '',
+    image: stock('1631292784640-2b24be784d5d', 760),
     blurb:
       "Pure, premium and exotic — Shudh's Kashmiri Saffron is a must-have for traditional, mouth-watering shahi feasts. Hand-picked Mongra threads carry a subtle, earthy flavour and an unmistakable aroma that make every dish a little more special.",
   },
   'Dry Fruits': {
     emoji: '🌰',
-    image: '',
+    image: stock('1508061253366-f7da158b6d46', 760),
     blurb:
       "From plump almonds to crisp Kashmiri walnuts, our dry fruits are freshness you can smell the moment the pack opens. Sourced at the origin and clean-packed, they're perfect for daily snacking, festive sweets and thoughtful gifting.",
   },

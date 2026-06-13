@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom'
-import { productsByCategory } from '../data/products.js'
+import { categoryInfo, productsByCategory } from '../data/products.js'
 
-// Build one visual tile per category: a representative image (first product
-// in the category that has one) or an emoji fallback, plus the item count.
+// Build one visual tile per category: a representative image (a product photo
+// if any, else the category's showcase image) or an emoji fallback, plus count.
 function categoryTiles() {
   return productsByCategory().map(({ category, items }) => {
     const withImage = items.find((p) => p.image)
     return {
       category,
-      image: withImage ? withImage.image : '',
+      image: withImage ? withImage.image : categoryInfo[category]?.image || '',
       emoji: items[0]?.emoji || '🌶️',
       count: items.length,
     }
