@@ -25,6 +25,46 @@ export function whatsappLink(message) {
   return `https://wa.me/${site.whatsappNumber}?text=${encodeURIComponent(message)}`
 }
 
+// ---- Homepage hero + feature-card visuals ----
+// Free Unsplash photos (royalty-free). Swap any URL for your own product/spice
+// photos when ready — the layout doesn't change.
+const stock = (id, w = 800) =>
+  `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=70`
+
+export const homepage = {
+  badge: 'PURE SPICES, BETTER FLAVOR',
+  headline: ['EVERY PINCH TELLS', 'A FLAVOR STORY'],
+  heroImages: {
+    left: stock('1596040033229-a9821ebd058d', 520),
+    right: stock('1532336414038-cf19250c5757', 520),
+  },
+  cards: [
+    {
+      tone: 'green',
+      label: 'FRESHLY PACKED.',
+      image: stock('1509358271058-acd22cc93898', 700),
+      badge: 'BOLD FLAVOR',
+      heading: 'Your favorite dishes, elevated one pinch',
+      jar: stock('1467003909585-2f8a72700288', 360),
+    },
+    {
+      tone: 'yellow',
+      label: 'PURE & NATURAL.',
+      image: stock('1556909211-36987daf7b4d', 700),
+      badge: 'ORGANIC',
+      heading: 'Authentic Kashmiri spices to elevate every meal naturally',
+    },
+    {
+      tone: 'orange',
+      kicker: 'FEATURED',
+      title: 'KASHMIRI SAFFRON MONGRA BLEND',
+      jar: stock('1505253758473-96b7015fcd40', 420),
+      pill: 'BOLD FLAVOR',
+      tag: 'PURE SPICE',
+    },
+  ],
+}
+
 export const features = [
   {
     icon: '🌿',
