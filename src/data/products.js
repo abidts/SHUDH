@@ -38,6 +38,7 @@ export const homepage = {
     left: stock('1596040033229-a9821ebd058d', 520),
     right: stock('1532336414038-cf19250c5757', 520),
   },
+  aboutImage: stock('1517686469429-8bdb88b9f907', 760),
   cards: [
     {
       tone: 'green',

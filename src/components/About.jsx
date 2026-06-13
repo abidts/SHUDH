@@ -1,4 +1,4 @@
-import { aboutPoints, aboutStory, site } from '../data/products.js'
+import { aboutPoints, aboutStory, homepage, site } from '../data/products.js'
 
 export default function About() {
   return (
@@ -25,11 +25,8 @@ export default function About() {
             </div>
           </div>
           <div className="col-lg-6 text-center">
-            <div
-              className="feature-card p-5 d-inline-block"
-              style={{ fontSize: '6rem', lineHeight: 1.2 }}
-            >
-              🌸🥜🌰<br />🫛🍇🌶️
+            <div className="about-frame">
+              <img src={homepage.aboutImage} alt="Kashmiri spices" loading="lazy" />
             </div>
           </div>
         </div>

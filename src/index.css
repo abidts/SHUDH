@@ -838,3 +838,196 @@ section {
     min-height: 0;
   }
 }
+
+/* ===================================================================
+   Bold theme propagated across sub-pages & remaining home sections
+   =================================================================== */
+body {
+  background: var(--bold-cream);
+}
+
+/* ---- Sub-page light banner (matches the home hero) ---- */
+.page-banner-bold {
+  position: relative;
+  background: var(--bold-cream);
+  padding: 8rem 1rem 3.5rem;
+  overflow: hidden;
+}
+.page-banner-inner {
+  position: relative;
+  z-index: 2;
+}
+.page-banner-title {
+  font-family: 'Bevan', Georgia, serif;
+  text-transform: uppercase;
+  color: var(--bold-brown);
+  line-height: 1;
+  letter-spacing: 0.005em;
+  font-size: clamp(2rem, 5.5vw, 3.8rem);
+  margin: 0.4rem 0 0;
+}
+.page-banner-sub {
+  font-family: 'Oswald', sans-serif;
+  color: #6b4a33;
+  letter-spacing: 0.02em;
+  font-size: 1.05rem;
+  margin: 0.9rem 0 0;
+}
+
+/* ---- Section titles & headings ---- */
+.section-title {
+  font-family: 'Bevan', Georgia, serif;
+  text-transform: uppercase;
+  color: var(--bold-brown);
+  letter-spacing: 0.01em;
+}
+.section-title::after {
+  background: var(--bold-orange);
+}
+.category-heading {
+  font-family: 'Bevan', Georgia, serif;
+  text-transform: uppercase;
+  color: var(--bold-brown);
+  letter-spacing: 0.01em;
+}
+.category-heading::before {
+  background: var(--bold-orange);
+}
+
+/* ---- Buttons rebrand (brown → orange) ---- */
+.btn-spice {
+  background: var(--bold-brown);
+  border-color: var(--bold-brown);
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.btn-spice:hover {
+  background: var(--bold-orange);
+  border-color: var(--bold-orange);
+}
+.btn-viewmore {
+  background: var(--bold-brown);
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.btn-viewmore:hover {
+  background: var(--bold-orange);
+}
+
+/* ---- Category filter chips ---- */
+.cat-chip {
+  color: var(--bold-brown);
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.cat-chip:hover {
+  border-color: var(--bold-orange);
+  color: var(--bold-orange);
+}
+.cat-chip.active {
+  background: var(--bold-brown);
+  border-color: var(--bold-brown);
+}
+
+/* ---- Product cards ---- */
+.product-card h3 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--bold-brown);
+}
+.product-cat {
+  background: #efe2cb;
+  color: var(--bold-brown);
+}
+.price-tag {
+  color: var(--bold-orange);
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+/* ---- Category showcase (alternating colored title chips) ---- */
+.showcase-title {
+  font-family: 'Bevan', Georgia, serif;
+}
+.showcase-row:nth-child(3n + 1) .showcase-title {
+  background: var(--bold-green);
+  color: #fff;
+}
+.showcase-row:nth-child(3n + 2) .showcase-title {
+  background: var(--bold-yellow);
+  color: var(--bold-brown);
+}
+.showcase-row:nth-child(3n + 3) .showcase-title {
+  background: var(--bold-orange);
+  color: #fff;
+}
+
+/* ---- Stats band ---- */
+.stats-band {
+  background: var(--bold-brown);
+}
+.stats-band h2 {
+  font-family: 'Bevan', Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+.stat-value {
+  font-family: 'Bevan', Georgia, serif;
+  color: var(--bold-yellow);
+}
+
+/* ---- Newsletter band ---- */
+.newsletter-band h2 {
+  font-family: 'Bevan', Georgia, serif;
+  text-transform: uppercase;
+  color: var(--bold-brown);
+  letter-spacing: 0.01em;
+}
+
+/* ---- Recipes ---- */
+.recipe-card h3 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--bold-brown);
+}
+.recipe-link {
+  color: var(--bold-orange);
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.02em;
+}
+.recipe-link:hover {
+  color: var(--bold-brown);
+}
+
+/* ---- Contact ---- */
+.contact-info-card {
+  background: var(--bold-brown);
+}
+.contact-info-card a {
+  color: var(--bold-yellow);
+}
+.contact-info-card h3 {
+  font-family: 'Bevan', Georgia, serif;
+  text-transform: uppercase;
+}
+
+/* ---- About image frame ---- */
+.about-frame {
+  display: inline-block;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 6px solid #fff;
+  box-shadow: 0 14px 34px rgba(58, 33, 20, 0.18);
+  max-width: 100%;
+}
+.about-frame img {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+}

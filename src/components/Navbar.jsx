@@ -1,13 +1,11 @@
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { site, whatsappLink } from '../data/products.js'
 
 export default function Navbar() {
-  // The home hero is light; sub-page banners are dark. Switch the overlay
-  // nav to dark text on the home route so links stay readable.
-  const onLight = useLocation().pathname === '/'
-
+  // Every page now has a light (cream) header, so the overlay nav uses dark
+  // text everywhere for readability.
   return (
-    <nav className={`navbar navbar-expand-lg navbar-shudh${onLight ? ' navbar-onlight' : ''}`}>
+    <nav className="navbar navbar-expand-lg navbar-shudh navbar-onlight">
       <div className="container">
         <Link className="navbar-brand d-flex align-items-center" to="/">
           <span className="brand-logo">S</span>
