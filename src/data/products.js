@@ -172,7 +172,7 @@ export const products = [
     name: 'Kashmiri Saffron',
     category: 'Exotic Range',
     emoji: '🌸',
-    image: '',
+    image: stock('1631189944771-466264f05965', 600),
     blurb:
       'Crimson threads of pure Mongra that make a few strands feel like an open flex.',
   },
@@ -180,7 +180,7 @@ export const products = [
     name: 'Premium Almonds',
     category: 'Dry Fruits',
     emoji: '🥜',
-    image: '',
+    image: stock('1508061253366-f7da158b6d46', 600),
     blurb:
       'The overachiever of snack jars: quiet, classy, and always pretending to be healthy.',
   },
@@ -188,7 +188,8 @@ export const products = [
     name: 'Kashmiri Walnuts',
     category: 'Dry Fruits',
     emoji: '🌰',
-    image: '',
+    image:
+      'https://images.unsplash.com/flagged/photo-1579410137922-543ed48d263e?auto=format&fit=crop&w=600&q=70',
     blurb:
       'Brain-shaped little geniuses that crack open into pure cold-weather comfort.',
   },
@@ -196,7 +197,7 @@ export const products = [
     name: 'Green Cardamom',
     category: 'Pure Spices',
     emoji: '🫛',
-    image: '',
+    image: stock('1642255486695-a52c59347cfa', 600),
     blurb:
       'Small pods, huge attitude, and the secret reason chai gets all the compliments.',
   },
@@ -204,7 +205,7 @@ export const products = [
     name: 'Dry Fruits Mix',
     category: 'Dry Fruits',
     emoji: '🍇',
-    image: '',
+    image: stock('1693812879904-b8161644ce5a', 600),
     blurb:
       'A handful of everything good, for people who can never pick just one favorite.',
   },
@@ -212,7 +213,7 @@ export const products = [
     name: 'Blended Masalas',
     category: 'Blended Spices',
     emoji: '🌶️',
-    image: '',
+    image: stock('1596040033229-a9821ebd058d', 600),
     blurb:
       'Tiny flavor fireworks for people who believe bland food is a personal insult.',
   },
