@@ -437,6 +437,19 @@ section {
   font-size: 2.2rem;
   line-height: 1;
 }
+.recipe-thumb {
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fdf1d8, #f4dcae);
+  overflow: hidden;
+}
+.recipe-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .recipe-link {
   color: var(--spice-amber);
   font-weight: 600;

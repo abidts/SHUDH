@@ -106,12 +106,12 @@ export const stats = [
 
 // Kashmiri recipes — informational cards, link to a WhatsApp enquiry.
 export const recipes = [
-  { name: 'Rogan Josh', emoji: '🍖', note: 'The crimson Kashmiri classic — lamb slow-cooked in our pure spices.' },
-  { name: 'Mutton Yakhni', emoji: '🥘', note: 'Fragrant yoghurt curry carried by green cardamom and fennel.' },
-  { name: 'Kashmiri Kahwa', emoji: '🍵', note: 'Saffron, cardamom and almond — the valley in a cup.' },
-  { name: 'Dum Aloo', emoji: '🥔', note: 'Baby potatoes simmered in a rich, spiced Kashmiri gravy.' },
-  { name: 'Modur Pulav', emoji: '🍚', note: 'Sweet saffron rice studded with dry fruits for festive days.' },
-  { name: 'Kesar Kheer', emoji: '🍮', note: 'Slow-cooked milk pudding perfumed with our Mongra saffron.' },
+  { name: 'Rogan Josh', emoji: '🍖', image: stock('1710091691780-c7eb0dc50cf8', 600), note: 'The crimson Kashmiri classic — lamb slow-cooked in our pure spices.' },
+  { name: 'Mutton Yakhni', emoji: '🥘', image: stock('1603894584373-5ac82b2ae398', 600), note: 'Fragrant yoghurt curry carried by green cardamom and fennel.' },
+  { name: 'Kashmiri Kahwa', emoji: '🍵', image: stock('1730177587476-ac7539310256', 600), note: 'Saffron, cardamom and almond — the valley in a cup.' },
+  { name: 'Dum Aloo', emoji: '🥔', image: stock('1631292784640-2b24be784d5d', 600), note: 'Baby potatoes simmered in a rich, spiced Kashmiri gravy.' },
+  { name: 'Modur Pulav', emoji: '🍚', image: stock('1631515243349-e0cb75fb8d3a', 600), note: 'Sweet saffron rice studded with dry fruits for festive days.' },
+  { name: 'Kesar Kheer', emoji: '🍮', image: stock('1604748839931-5b5104964970', 600), note: 'Slow-cooked milk pudding perfumed with our Mongra saffron.' },
 ]
 
 // Order in which product categories are listed on the page.
